@@ -7,38 +7,40 @@
     <title>AI Short Story Generator</title>
   </head>
   <body>
-    <header><h1>Welcome to the AI generator!</h1></header>
-    <main>
-      <form action="">
-        <input
-          type="text"
-          name="Story Prompt"
-          id=""
-          placeholder="Enter story prompt"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-        <div>
+    <div class="container">
+      <header><h1>AI Story Prompt Generator</h1></header>
+      <main>
+        <form action="">
+          <input
+            type="text"
+            name="Story Prompt"
+            class="field"
+            placeholder="Enter story prompt"
+            autofocus
+            required
+            autocomplete="off"
+          />
+          <input type="submit" class="button" />
+        </form>
+        <div class="story">
           A lone lighthouse blinked against the storm, guiding ships that never
-          came. <br />Inside, its keeper whispered to the sea, hoping it would
-          whisper back.
+          came. Inside, its keeper whispered to the sea, hoping it would whisper
+          back.
         </div>
-      </form>
-    </main>
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/CanGene" target="_blank">Candace Genesis</a>
-      and is open-sourced on
-      <a href="https://github.com/CanGene/AI-generator" target="_blank"
-        >GitHub</a
-      >
-      and is hosted on
-      <a href="https://generate-short-story.netlify.app/" target="_blank"
-        >Netlify</a
-      >.
-    </footer>
+      </main>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/CanGene" target="_blank">Candace Genesis</a>
+        and is open-sourced on
+        <a href="https://github.com/CanGene/AI-generator" target="_blank"
+          >GitHub</a
+        >
+        and is hosted on
+        <a href="https://generate-short-story.netlify.app/" target="_blank"
+          >Netlify</a
+        >.
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
