@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Short Story Generator</title>
   </head>
@@ -10,7 +11,7 @@
     <div class="container">
       <header><h1>AI Story Prompt Generator</h1></header>
       <main>
-        <form action="">
+        <form id="prompt-form">
           <input
             type="text"
             name="Story Prompt"
@@ -22,11 +23,7 @@
           />
           <input type="submit" class="button" />
         </form>
-        <div class="story">
-          A lone lighthouse blinked against the storm, guiding ships that never
-          came. Inside, its keeper whispered to the sea, hoping it would whisper
-          back.
-        </div>
+        <div class="story" id="story"></div>
       </main>
       <footer>
         This AI project was coded by
