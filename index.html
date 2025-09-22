@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Short Story Generator</title>
   </head>
@@ -15,11 +16,12 @@
           <input
             type="text"
             name="Story Prompt"
-            class="field"
             placeholder="Enter story prompt"
             autofocus
             required
             autocomplete="off"
+            class="field"
+            id="instructions"
           />
           <input type="submit" class="button" />
         </form>

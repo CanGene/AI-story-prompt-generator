@@ -57,6 +57,9 @@ form {
   background: #faf7ff;
   border-radius: 0 4px 4px 0;
 }
+.story strong {
+  color: #b4abdd;
+}
 footer {
   text-align: center;
   font-size: 12px;
