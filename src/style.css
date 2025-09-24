@@ -80,14 +80,11 @@ form {
 }
 
 .button:hover {
-  background-color: white;
-}
-
-.button:active {
   background-color: #363b4e;
   border-color: #363b4e;
   color: white;
 }
+
 .hint {
   color: #929aab;
   font-size: 14px;
