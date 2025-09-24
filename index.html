@@ -6,40 +6,49 @@
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
-    <title>AI Short Story Generator</title>
+    <title>StorySpark - AI Story Prompt Generator</title>
   </head>
   <body>
     <div class="container">
-      <header><h1>AI Story Prompt Generator</h1></header>
+      <header>
+        <h1>StorySpark</h1>
+        <h2>An AI Story Prompt Generator</h2>
+
+        <p>Two sentences to spark a thousand stories.</p>
+      </header>
       <main>
-        <form id="prompt-form">
-          <input
-            type="text"
-            name="Story Prompt"
-            placeholder="Enter story prompt"
-            autofocus
-            required
-            autocomplete="off"
-            class="field"
-            id="instructions"
-          />
-          <input type="submit" class="button" />
-        </form>
-        <div class="story" id="story"></div>
+        <div class="form-container">
+          <form id="prompt-form">
+            <input
+              type="text"
+              name="Story Prompt"
+              placeholder="✨ Type a keyword to inspire your opening lines"
+              autofocus
+              required
+              autocomplete="off"
+              class="field"
+              id="instructions"
+            />
+            <input type="submit" class="button" />
+          </form>
+          <small class="hint"
+            >Examples: magic, rebellion, lost city, childhood, orchestra</small
+          >
+        </div>
+        <div class="story hidden" id="story"></div>
       </main>
-      <footer>
-        This AI project was coded by
-        <a href="https://github.com/CanGene" target="_blank">Candace Genesis</a>
-        and is open-sourced on
-        <a href="https://github.com/CanGene/AI-generator" target="_blank"
-          >GitHub</a
-        >
-        and is hosted on
-        <a href="https://generate-short-story.netlify.app/" target="_blank"
-          >Netlify</a
-        >.
-      </footer>
     </div>
+    <footer>
+      Built by
+      <a href="https://github.com/CanGene" target="_blank">Candace Genesis</a> •
+      Open-sourced on
+      <a href="https://github.com/CanGene/AI-generator" target="_blank"
+        >GitHub</a
+      >
+      • Hosted on
+      <a href="https://sparkstory.netlify.app/" target="_blank">Netlify</a>.
+    </footer>
+
     <script src="src/index.js"></script>
   </body>
 </html>

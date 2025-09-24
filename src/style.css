@@ -6,9 +6,10 @@ body {
 }
 .container {
   margin: 120px auto;
+  margin-bottom: 40px;
   max-width: 600px;
   background-color: white;
-  padding: 40px;
+  padding: 60px;
   border-radius: 12px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -17,13 +18,26 @@ header {
 }
 h1 {
   text-align: center;
-  font-size: 36px;
+  font-size: 64px;
+  margin: 0 auto;
+  font-family: "Jacquard 24";
   font-weight: 400;
+}
+h2 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+}
+p {
+  text-align: center;
+  font-size: 18px;
+  color: #9589cb;
 }
 form {
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 8px;
 }
+
 .field {
   padding: 20px;
   border: 2px solid #dcd6f7;
@@ -32,9 +46,14 @@ form {
   line-height: 1.5;
   font-size: 16px;
   font-family: Outfit;
+  color: #363b4e;
 }
 .field:focus {
   outline-color: #dcd6f7;
+}
+.field::placeholder {
+  color: #929aab;
+  font-size: 16px;
 }
 .button {
   margin-left: 10px;
@@ -43,12 +62,21 @@ form {
   line-height: 1.5;
   border-radius: 8px;
   background: #dcd6f7;
-  border: 1px solid #dcd6f7;
-  color: #424874;
+  border: 2px solid #dcd6f7;
+  color: #363b4e;
   font-size: 16px;
   font-family: Outfit;
+  transition: 300ms ease-in-out all;
+}
+.button:hover {
+  background-color: white;
+}
+.hint {
+  color: #929aab;
+  font-size: 14px;
 }
 .story {
+  margin-top: 40px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -58,14 +86,35 @@ form {
   border-radius: 0 4px 4px 0;
 }
 .story strong {
-  color: #b4abdd;
+  color: #9589cb;
+  font-weight: 400;
+  font-size: 12px;
+  padding-top: 10px;
+}
+.hidden {
+  display: none;
+}
+.blink {
+  animation: blink 1.5s infinite;
+  animation-fill-mode: both;
+  color: #9589cb;
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 footer {
   text-align: center;
   font-size: 12px;
-  margin-top: 40px;
   color: #929aab;
 }
 a {
-  color: #424874;
+  color: #9589cb;
 }
