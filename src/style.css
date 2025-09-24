@@ -118,3 +118,58 @@ footer {
 a {
   color: #9589cb;
 }
+@media (max-width: 600px) {
+  .container {
+    margin: 40px auto;
+  }
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .hint {
+    font-size: 10px;
+  }
+  form {
+    display: block;
+  }
+
+  .field {
+    padding: 14px;
+    border-radius: 4px;
+    font-size: 12px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .field::placeholder {
+    font-size: 12px;
+  }
+  .button {
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .story {
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 12px;
+    padding: 12px;
+  }
+  .story strong {
+    font-size: 10px;
+    padding-top: 10px;
+  }
+
+  footer {
+    font-size: 10px;
+  }
+}
