@@ -1,6 +1,6 @@
 body {
   background-color: #faf7ff;
-  font-family: Outfit;
+  font-family: "Outfit";
   padding: 40px;
   color: #363b4e;
 }
@@ -45,7 +45,7 @@ form {
   width: 80%;
   line-height: 1.5;
   font-size: 16px;
-  font-family: Outfit;
+  font-family: "Outfit";
   color: #363b4e;
 }
 .field:focus {
@@ -65,7 +65,7 @@ form {
   border: 2px solid #dcd6f7;
   color: #363b4e;
   font-size: 16px;
-  font-family: Outfit;
+  font-family: "Outfit";
   transition: 300ms ease-in-out all;
 }
 .button:hover {
