@@ -12,7 +12,7 @@ function generateStory(event) {
   let apiKey = "df0033d89466fabb34t4ob6db243c833";
   let prompt = `Write a concise, intriguing opening to a story based on the theme ${instructionsInput.value}`;
   let context =
-    "Write a 2-sentence opening to a story as if you are a master storyteller. Make it intriguing, set a clear tone, and leave enough mystery to inspire continuation. End with a line break <br/> and sign off as SheCodes AI in a <strong> element.";
+    "Write exactly 4 sentences that begin a story—not a description, not a summary—based on the prompt. Use direct narration, as if the reader has just opened the first page of a novel. Make it intriguing, set the tone, and leave enough mystery for continuation. End with a <br/> and sign off as SheCodes AI in a <strong> element.";
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   let storyElement = document.querySelector("#story");
